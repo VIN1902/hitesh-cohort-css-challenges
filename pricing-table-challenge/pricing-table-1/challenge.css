@@ -1,69 +1,87 @@
 /* Challenge CSS */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
 }
 
-.container {
-  /* Add your styles here */
-}
+.container {}
 
 h1 {
-  /* Add your styles here */
+    font-size: 32px;
 }
 
 .pricing-heading {
-  /* Add your styles here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pricing-container {
-  /* Add your styles here */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .pricing-card {
-  /* Add your styles here */
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    /* justify-content: center;
+    align-content: center; */
 }
 
 .pricing-card:hover {
-  /* Add your styles here */
+    position: relative;
+    bottom: 10px;
 }
 
 .pricing-card.popular {
-  /* Add your styles here */
+    position: relative;
+
+    border: 2.5px solid #ff9533;
 }
 
 .popular-badge {
-  /* Add your styles here */
+    background-color: #ff9533;
+    color: #ffffff;
+    padding: 7px 7px;
+    border-radius: 45px;
+
+    position: absolute;
+    top: -20px;
 }
 
-.price {
-  /* Add your styles here */
-}
+.price {}
 
-.period {
-  /* Add your styles here */
-}
+.period {}
 
 .features {
-  /* Add your styles here */
+    list-style-type: none;
 }
 
-.features li {
-  /* Add your styles here */
-}
+.features li {}
 
 .subscribe-btn {
-  /* Add your styles here */
+    background-color: #ff9533;
+    border-radius: 20px;
+    padding: 8px 16px;
+    border: none;
+    font-size: medium;
 }
 
 .subscribe-btn:hover {
-  /* Add your styles here */
+    background-color: #ffab5c;
 }
