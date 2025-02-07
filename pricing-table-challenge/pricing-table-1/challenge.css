@@ -12,7 +12,19 @@ body {
     background-color: #f5f5f5;
 }
 
-.container {}
+.container {
+    height: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+    display: grid;
+    grid-template-rows: 15% 85%;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
 
 h1 {
     font-size: 32px;
@@ -28,19 +40,30 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+
+    align-self: baseline;
 }
 
 .pricing-card {
     background-color: #ffffff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
-    display: grid;
+
+    /* display: grid;
     grid-template-rows: repeat(5, 1fr);
     justify-items: center;
     align-items: center;
 
-    /* justify-content: center;
+    justify-content: center;
     align-content: center; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 350px;
+    height: 450px;
 }
 
 .pricing-card:hover {
@@ -64,15 +87,22 @@ h1 {
     top: -20px;
 }
 
-.price {}
+.price {
+    font-weight: 700;
+    font-size: xx-large;
+}
 
-.period {}
+.period {
+    color: #5c5c5c;
+}
 
 .features {
     list-style-type: none;
 }
 
-.features li {}
+.features li {
+    font-size: larger;
+}
 
 .subscribe-btn {
     background-color: #ff9533;
